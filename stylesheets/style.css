@@ -9,7 +9,7 @@
   position: relative; }
 
 .board {
-  background: #6C6C7D;
+  background: #FFF;
   border-radius: 20px;
   box-shadow: 1px 1px 10px 0 #999;
   padding: 15px; }
@@ -18,7 +18,8 @@
     width: 100%; }
   .board__cell, .board__tile {
     background: rgba(225, 226, 241, 0.5);
-    border-radius: 50%;
+    border: solid 2px #000;
+      border-radius: 50%;
     box-sizing: border-box;
     height: 50px;
     float: left;
