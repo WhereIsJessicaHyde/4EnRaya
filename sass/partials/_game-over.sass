@@ -1,0 +1,27 @@
+.game-over
+  background: $secundary-gray
+  border-radius: 25px
+  width: 415px
+  height: 390px
+  position: absolute
+  float: left
+  left: -1000px
+  top: 5px
+  animation: slide 0.5s forwards
+
+  p
+    font-size: 70px
+    font-weight: bolder
+
+  img
+    margin-left: 125px
+    margin-top: 10px
+    width: 150px
+
+@-webkit-keyframes slide
+  100%
+    left: 20px
+
+@keyframes slide
+  100%
+    left: 20px

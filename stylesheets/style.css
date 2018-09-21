@@ -1,0 +1,99 @@
+.container {
+  margin: 40px auto;
+  width: 550px;
+  border: solid 10px black;
+    border-radius: 30px;
+  box-shadow: 0 5px 10px #999; }
+
+.main {
+  position: relative; }
+
+.board {
+  background: #6C6C7D;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 0 #999;
+  padding: 15px; }
+  .board__row {
+    height: 100%;
+    width: 100%; }
+  .board__cell, .board__tile {
+    background: rgba(225, 226, 241, 0.5);
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 50px;
+    float: left;
+    margin: 10px;
+    width: 50px; }
+  .board__tile {
+    background: rgba(225, 226, 241, 0.5);
+    box-sizing: border-box;
+    color: #fff;
+    float: none;
+    font-size: 55px;
+      font-size-weight: bold;
+    padding-top: 30px;
+    position: absolute;
+    text-align: center;
+      text-align-shadow: 1px 1px 3px #000; }
+  .board__tile-red {
+    background: rgba(215, 44, 44, 0.8); }
+  .board__tile-green {
+    background-color: #407847; }
+  .board__buttons {
+    margin: 10px; }
+  .board__button {
+    background-color: #ffea00;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 2px #ffea00;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+      margin-left-right: 25px; }
+    .board__button:hover {
+      background-color: #ffea8f; }
+
+.game-over {
+  background: rgba(225, 226, 241, 0.5);
+  border-radius: 25px;
+  width: 415px;
+  height: 390px;
+  position: absolute;
+  float: left;
+  left: -1000px;
+  top: 5px;
+  animation: slide 0.5s forwards; }
+  .game-over p {
+    font-size: 70px;
+    font-weight: bolder; }
+  .game-over img {
+    margin-left: 125px;
+    margin-top: 10px;
+    width: 150px; }
+
+@-webkit-keyframes slide {
+  100% {
+    left: 20px; } }
+
+@keyframes slide {
+  100% {
+    left: 20px; } }
+
+html {
+  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
+    font-family-size: 16px;
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  margin: 20px auto;
+  color: rgba(215, 44, 44, 0.8);
+  padding: 0;
+  font-size: 100px;
+  text-align: center; }
+
+.clearfix {
+  clear: both; }
+
+.hide {
+  display: none; }

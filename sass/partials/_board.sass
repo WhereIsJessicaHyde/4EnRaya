@@ -1,0 +1,64 @@
+.container
+  margin: 40px auto
+  width: 550px
+  border: solid 10px black
+    radius: 30px
+  box-shadow: 0 5px 10px $primary-gray
+
+
+.main
+  position: relative
+
+.board
+  background: $background-gray
+  border-radius: 20px
+  box-shadow: 1px 1px 10px 0 $primary-gray
+  padding: 15px
+
+  &__row
+    height: 100%
+    width: 100%
+
+  &__cell,
+  &__tile
+    background: $secundary-gray
+    border-radius: 50%
+    box-sizing: border-box
+    height: 50px
+    float: left
+    margin: 10px
+    width: 50px
+
+  &__tile
+    background: $secundary-gray
+    box-sizing: border-box
+    color: #fff
+    float: none
+    font-size: 55px
+      weight: bold
+    padding-top: 30px
+    position: absolute
+    text-align: center
+      shadow: 1px 1px 3px #000
+
+  &__tile-red
+    background: $background-red
+
+  &__tile-green
+    background-color: $third-green
+
+  &__buttons
+    margin: 10px
+
+  &__button
+    background-color: $primary-yellow
+    border-radius: 50%
+    box-shadow: 0px 0px 10px 2px $secundary-yellow
+    display: inline-block
+    height: 30px
+    width: 30px
+    margin-left: 10px
+      right: 25px
+
+    &:hover
+      background-color: $third-yellow

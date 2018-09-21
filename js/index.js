@@ -10,24 +10,24 @@ function addTile (event) {
 }
 
 function renderTile (position) {
-  var boardElement= document.getElementById("game-board");
-  var rowElement = boardElement.getElementsByClassName("row")[position[0]];
+  var boardElement= document.getElementsByClassName("board");
+  var rowElement = boardElement.getElementsByClassName("board__row")[position[0]];
   var cellElement= rowElement.getElementsByTagName("div")[position[1]];
-  cellElement.classList += (" tile-" + board.turn);
+  cellElement.classList += (" board__tile-" + board.turn);
 }
 
 function gameStatus () {
   var winner = board.checkWinner();
 
   if (winner) {
-    var winMessage = document.getElementById('game-over');
+    var winMessage = document.getElementsByClassName('game-over');
     winMessage.childNodes[3].append(winner.toUpperCase() + "   WINS!!!");
-    document.getElementById("game-over").className = "";
+    document.getElementsByTagName("game-over").className = "";
   }
 }
 
 window.onload = function () {
-  var buttons = document.getElementsByClassName("button");
+  var buttons = document.getElementsByClassName("board__button");
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", addTile);
   }
